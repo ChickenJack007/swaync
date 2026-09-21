@@ -10,7 +10,8 @@
 
   all: unset;
   font-size: 12px;
-  font-family: "JetBrains Mono Nerd Font 10";
+  /*font-family: "JetBrains Mono Nerd Font 10";*/
+  font-family: "Montserrat Regular", "Lilex Nerd Font Propo";
   transition: 200ms;
 
 }
@@ -24,21 +25,22 @@
 .floating-notifications.background .notification-row .notification-background {
   /*background: @background;*/
   /*box-shadow: 0 0 8px 0 rgba(0,0,0,.6);*/
-  border-radius: 9px;
+  border-radius: 7px;
   /*border: 2px solid @selected;*/
   padding: 0;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification {
   /*padding: 6px;*/
-  border-radius: 9px;
-  border: 2px solid @selected;
-  margin-top: 10px;
-  margin-right: 10px;
+  background: @background-alt;
+  border-radius: 8px;
+  border: 1px solid @selected;
+  margin-top: 6px;
+  margin-right: 6px;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification.critical {
-  border: 2px solid @urgent;
+  border: 1px solid @urgent;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification .notification-content {
@@ -50,8 +52,8 @@
 }*/
 
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action {
-  border-radius: 9px;
-  border: 2px solid @selected;
+  border-radius: 7px;
+  border: 1px solid @selected;
   background-color: @background-alt ;
   margin: 6px;
   border: 1px solid transparent;
@@ -83,7 +85,7 @@
 .floating-notifications.background .notification-row .notification-background .close-button {
   margin: 6px;
   padding: 2px;
-  border-radius: 9px;
+  border-radius: 7px;
   background-color: transparent;
   border: 1px solid transparent;
 }
